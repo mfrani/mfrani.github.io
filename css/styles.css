@@ -1,0 +1,41 @@
+body {
+  font-family: "Lucida Console";
+  color: #000;
+  background: #fff;
+  padding: 3em 4em 5em;
+  word-wrap: break-word;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+a {
+  color: #00f;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #00f;
+  color: #fff;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ababab;
+}
+.grayed {
+  color: gray;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

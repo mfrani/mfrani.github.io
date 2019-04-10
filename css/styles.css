@@ -11,6 +11,13 @@ body {
   width: 33.33%;
 }
 
+.topnav {
+  float: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 a {
   color: #00f;
   text-decoration: none;
@@ -27,6 +34,10 @@ hr {
 .grayed {
   color: gray;
 }
+
+/* .vertical-line {
+  border-left: thin solid black;
+} */
 
 /* Clear floats after the columns */
 .row:after {

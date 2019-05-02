@@ -1,14 +1,58 @@
+a {
+  color: #00f;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #00f;
+  color: #fff;
+  overflow: hidden;
+}
+
 body {
   font-family: "Lucida Console";
   color: #000;
   background: #fff;
   padding: 3em 4em 5em;
   word-wrap: break-word;
+  margin: 50px;
 }
 
 .column {
   float: left;
   width: 33.33%;
+  display: inline-block;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ababab;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.grayed {
+  color: gray;
+}
+
+/* .vertical-line {
+  border-left: thin solid black;
+} */
+
+/* Clear floats after the columns */
+
+li p {
+  margin: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .topnav {
@@ -19,33 +63,14 @@ body {
   font-size: 17px;
 }
 
-a {
-  color: #00f;
-  text-decoration: none;
-}
-a:hover {
-  background-color: #00f;
-  color: #fff;
+.topnav li a {
+  display: block;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ababab;
-}
-.grayed {
-  color: gray;
+.topnav ul {
+  list-style-type: none;
 }
 
-/* .vertical-line {
-  border-left: thin solid black;
-} */
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;

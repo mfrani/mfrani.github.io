@@ -1,5 +1,7 @@
 .container {
   font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .topnav {
@@ -17,6 +19,10 @@
 }
 .navbrand {
   font-size: 20px;
+}
+.navbrand h4 {
+  font-size: 16px;
+  color: gray;
 }
 
 /*  SECTIONS  */

@@ -1,78 +1,108 @@
-a {
-  color: #00f;
-  text-decoration: none;
+.container {
+  font-family: "Roboto Mono", monospace;
 }
-a:hover {
+
+.topnav {
+  text-align: right;
+}
+.topnav a:hover {
   background-color: #00f;
   color: #fff;
   overflow: hidden;
 }
-
-body {
-  font-family: "Lucida Console";
-  color: #000;
-  background: #fff;
-  padding: 3em 4em 5em;
-  word-wrap: break-word;
-  margin: 50px;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
+.topnav li {
   display: inline-block;
+  text-decoration: none;
+  font-size: 23px;
+}
+.navbrand {
+  font-size: 20px;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ababab;
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
 
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
 }
 
-.grayed {
-  color: gray;
-}
-
-/* .vertical-line {
-  border-left: thin solid black;
-} */
-
-/* Clear floats after the columns */
-
-li p {
-  margin: 0;
-}
-
-.row:after {
+/*  GROUPING  */
+.group:before,
+.group:after {
   content: "";
   display: table;
+}
+.group:after {
   clear: both;
 }
-
-.topnav {
-  float: right;
-  overflow: hidden;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.group {
+  zoom: 1; /* For IE 6/7 */
 }
 
-.topnav li a {
-  display: block;
+/*  GRID OF THREE  */
+.span_3_of_3 {
+  width: 100%;
+}
+.span_2_of_3 {
+  width: 66.13%;
+}
+.span_1_of_3 {
+  width: 32.26%;
 }
 
-.topnav ul {
-  list-style-type: none;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_3_of_3,
+  .span_2_of_3,
+  .span_1_of_3 {
     width: 100%;
   }
+}
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2,
+  .span_1_of_2 {
+    width: 100%;
+  }
+}
+
+/*thumbnail styles*/
+.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
